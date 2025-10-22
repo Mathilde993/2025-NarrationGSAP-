@@ -51,7 +51,7 @@ let tlSardines2 = gsap.timeline({
 tlSardines2.to('.sardine2', {y:-900, x:-1380, stagger: 0.1, duration:5})
 .to ('sardine2', {x:100, stagger:0.1})
 .to ('sardine2', {y :500, stagger : 0.1})
-.to ('sardine2', {y :100, stagger : 0.1, duration:5})
+.to ('sardine2', {y :100, stagger : 0.1,})
 
 /**  Animation Bambou */
 

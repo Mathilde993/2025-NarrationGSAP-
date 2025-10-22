@@ -205,23 +205,27 @@ body{
 }
 
 
-/* Section 3 -------------------------
+/* Section 3 ------------------------- */
 
 #section3{
     width: 100%;
     min-height: 100vh;
+    background-image: url(assets/img/fond-savane.jpg);
+    background-size: cover;
 }
 
-*/
 
-/* Section 4 -------------------------
+
+/* Section 4 -------------------------*/
 
 #section4{
     width: 100%;
     min-height: 100vh;
+    background-image: url(assets/img/fond-tech.jpg);
+    background-size: cover;
 }
 
-*/
+
 
 /* Section 5 ------------------------- */
 
@@ -232,6 +236,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background-image: url(assets/img/fond-bambou.jpg);
+    background-size: cover;
 
     gap: 70px
 }
