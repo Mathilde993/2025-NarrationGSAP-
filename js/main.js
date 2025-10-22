@@ -30,17 +30,28 @@ tlCarroussel.to('.carousselSection1',{x:'-205vw',duration:20,})
 
 /** Animations Sardines */
 
-let tlSardines = gsap.timeline({
+let tlSardines1 = gsap.timeline({
 
-    repeat : -1,
-    yoyo:true,
+    repeat :-1,
+    yoyo:true
 
 });
 
-tl.to('.sardine1', {x:100, stagger : 0.1})
+tlSardines1.to('.sardine1', {y:900, x:1380, stagger : 0.1, duration: 5})
+.to ('sardine1', {x :100, stagger : 0.1})
+.to ('sardine1', {y :500, stagger : 0.1})
 .to ('sardine1', {y :100, stagger : 0.1})
-.to ('sardine1', {x :200, stagger : 0.1})
-.to ('sardine1', {y :200, stagger : 0.1})
+
+let tlSardines2 = gsap.timeline({
+
+    repeat: -1,
+    yoyo:true
+})
+
+tlSardines2.to('.sardine2', {y:-900, x:-1380, stagger: 0.1, duration:5})
+.to ('sardine2', {x:100, stagger:0.1})
+.to ('sardine2', {y :500, stagger : 0.1})
+.to ('sardine2', {y :100, stagger : 0.1, duration:5})
 
 /**  Animation Bambou */
 
