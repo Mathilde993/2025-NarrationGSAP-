@@ -10,15 +10,15 @@
 /* Font --------------------------*/
 
 h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 h2{
-    font-size: 40px;
+    font-family: "Quicksand", sans-serif;
 }
 
 p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 /* Composant ---------------------*/
@@ -83,7 +83,7 @@ body{
 
     background-color: rgba(84, 38, 0, 0.6);
     color: aliceblue;
-    box-shadow: 60px 20px 80px rgb(0, 0, 0);
+    box-shadow: 10px 10px 40px rgb(0, 0, 0);
 
     padding: 10px;
     margin-bottom: 25px;
@@ -105,8 +105,7 @@ body{
     width: 400px;
     min-height: 200px;
     border-radius: 10px;
-    border:solid 2px;
-    box-shadow: 5px 5px 90px rgb(0, 0, 0) ;
+    border:solid 2px rgb(255, 255, 255); 
     
 }
 
@@ -119,8 +118,8 @@ body{
     justify-content: center;
     flex-direction: column;
 
-    background-image: url(assets/img/ocean.jpg);
-    background-size: cover;
+    background-image: url(assets/img/fond-Sec2.jpg);
+    background-size: 400px;
 
     overflow-x: none;
     gap:10px
@@ -131,13 +130,15 @@ body{
     justify-content: start;
     align-items: center;
 
-    width: 80%;
+    width: 60%;
 
-    background-color: rgba(0, 0, 255, 0.5);
-    border-radius: 10px;
+    background-color:rgb(0, 0, 0);
+    transition: background-color 0.5s;
+    border:solid 1px black;
+    color: antiquewhite;
+    border-radius: 10px 10px 10px 10px;
 
     margin-left: 20px;
-    padding: 5px;
 
     gap:50px
 }
@@ -149,40 +150,38 @@ body{
     align-self: flex-end;
     flex-direction: row-reverse;
 
-    width: 80%;
+    width: 60%;
 
-    background-color: rgba(0, 0, 255, 0.5);
+    background-color:rgb(0, 0, 0);
+    border:solid 1px black;
+    color:antiquewhite;
+    transition: background-color 0.5s;
     border-radius: 10px;
 
     margin-right: 20px;
-    padding: 5px;
 
-    gap: 100px
 }
 
-.imgSection2{
-    width: 450px;
+.bloc1Sec2:hover{
+    background-color: rgb(50, 50, 50);
+} 
+
+
+.bloc2Sec2:hover{
+    background-color: rgb(50, 50, 50);
+} 
+
+.img1Section2, .img2Section2{
+    width: 350px;
     min-height: 200px;
-
-    border:solid 2px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 90px rgb(0, 0, 0)
 }
 
-.txt1Sec2, .txt2Sec2{
-    background-color: rgba(0, 255, 255, 0.5);
-    padding: 3px;
-    border-radius: 5px;
-
-    margin-top: 10px;
-    padding: 10px;
-
-    box-shadow: 5px 5px 90px rgb(0, 0, 0)
-
+.img1Section2{
+    border-radius: 10px 5px 5px 10px;
 }
 
-.txt1Sec2{
-    margin-right: 20px;
+.img2Section2{
+    border-radius: 5px 10px 10px 5px
 }
 
 .blocTxtSec2{
@@ -220,6 +219,8 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    display: none;
 }
 
 .blocSec3{
@@ -273,7 +274,9 @@ body{
     min-height: 100vh;
     background-image: url(assets/img/fond-tech.jpg);
     background-size: cover;
+    display: none;
 }
+
 
 
 
@@ -324,3 +327,5 @@ body{
 /* Responsive --------------------*/
 
 /* Animation --------------------*/
+
+/* Media Queries ------------------
