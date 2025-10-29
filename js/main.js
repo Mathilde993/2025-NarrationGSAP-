@@ -52,24 +52,22 @@ tlSardines2.to('.sardine2', {y:-900, x:-1380, stagger: 0.1, duration:5})
 .to ('sardine2', {y :500, stagger : 0.1})
 .to ('sardine2', {y :100, stagger : 0.1,})
 
-/** Scroll Trigger Img Savane */
 
+/** Scroll Trigger Section 3  */
 
-gsap.to("#imgSavane",{
-    scrollTrigger:{
-        trigger:'section3',
-        start:'top 60%',
-        end:'top 20%',
-        scrub:1,
-        //markers:true,
-        id:"imgSavane",
-        toggleActions: 'play none reverse reset',
-    },
+const sections = gsap.utils.toArray("#section3 > div");  // J'ai reçu la partie de ce code de la part de Fiora que j'ai re adapté à mon site web
 
-    duration: 2,
-})
-
-
+gsap.to(sections, {
+  xPercent: -64,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#section3",
+    pin: true,
+    scrub: 1,
+    snap: 1 / (sections.length - 1),
+    end: "+=2000"
+  }
+});
 
 
 /**  Animation Bambou */
@@ -81,16 +79,7 @@ Draggable.create("#bambouDrag", {
 
 })
 
-/**
 
-if (this.hitTest)("carreBambou","40px"){
-        document.getElementById("pandaCoeur").classList.add("pandaCoeur--validate")
-        
-} else{
-        document.getElementById("pandaCoeur").classList.remove("pandaCoeyr--validate")
-} 
-
-*/
 
 /** MatchMedia */
 

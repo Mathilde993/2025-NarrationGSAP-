@@ -211,46 +211,42 @@ body{
 /* Section 3 ------------------------- */
 
 #section3{
-    width: 100%;
-    min-height: 100vh;
+    width: 300vw;
+    min-height: 100vws;
     background-image: url(assets/img/fond-savane.jpg);
     background-size: cover;
 
     display: flex;
     justify-content: center;
-    flex-direction: column;
-
-    display: none;
+    
 }
 
 .blocSec3{
+    width:100%;
     display: flex;
-    min-height: 30%;
-    gap:120px;
-    padding: 15px;  
-}
-
-.blocTxtSec3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    gap:15px
+      
 
 }
 
-.nomSavane, .txtSavane{
-    background-color: rgba(210, 105, 30, 0.6);
-    border:solid 2px black;
-    border-radius: 100px;
-    padding: 10px;
-    color: antiquewhite;
+.blocTxt1Sec3, .blocTxt2Sec3, .blocTxt3Sec3{
+    width:100%;
+    min-height: 100vw;
+
 }
 
-.txtSavane{
-    padding: 30px;
+.blocTxt1Sec3{
+    background-color: blueviolet;
 }
+
+.blocTxt2Sec3{
+    background-color: blue;
+}
+
+.blocTxt3Sec3{
+    background-color: chartreuse;
+}
+
+
 
 
 
