@@ -118,7 +118,7 @@ body{
     justify-content: center;
     flex-direction: column;
 
-    background-image: url(assets/img/fond-Sec2.jpg);
+    background-image: url(assets/img/fond-Sec2.webp);
     background-size: 400px;
 
     overflow-x: none;
@@ -212,12 +212,12 @@ body{
 
 #section3{
     width: 300vw;
-    min-height: 100vws;
-    background-image: url(assets/img/fond-savane.jpg);
-    background-size: cover;
+    min-height: 50vh;
 
     display: flex;
     justify-content: center;
+
+    overflow: hidden;
     
 }
 
@@ -229,56 +229,32 @@ body{
 }
 
 .blocTxt1Sec3, .blocTxt2Sec3, .blocTxt3Sec3{
-    width:100%;
-    min-height: 100vw;
+    width:100vw;
+    height: 100vh;
 
 }
 
 .blocTxt1Sec3{
-    background-color: blueviolet;
+    background-image:url(assets/img/lion-section.jpg);
+    background-size:cover;
+    background-position: center;
 }
 
 .blocTxt2Sec3{
-    background-color: blue;
+    background-image:url(assets/img/girafe.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .blocTxt3Sec3{
-    background-color: chartreuse;
+    background-image:url(assets/img/tigre-blanc.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-
-
-
-
-
-
-.imgSec3{
-    width:400px;
-    min-height: 200px;
-
-    border-radius: 100px;
-    border:solid 2px black;
-    box-shadow: 5px 5px 90px rgb(0, 0, 0);
-}
-
-
-
-/* Section 4 -------------------------*/
+/* Section 4 ------------------------- */
 
 #section4{
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(assets/img/fond-tech.jpg);
-    background-size: cover;
-    display: none;
-}
-
-
-
-
-/* Section 5 ------------------------- */
-
-#section5{
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -286,8 +262,8 @@ body{
     justify-content: center;
     align-items: center;
 
-    background-image: url(assets/img/fond-bambou.jpg);
-    background-size: cover;
+    background-image: url(assets/img/fond-Sec2.webp);
+    color: white;
 
     gap: 70px
 }
@@ -295,30 +271,13 @@ body{
 .panda{
     width:300px;
     min-height: 200px;
-}
-
-.coeurPanda{
-    width:50px;
-    min-height: 50px;
-    display: none;
-}
-
-#pandaCoeur--validate{
-    display:block;
+    padding-right: 70px;
 }
 
 .bambou{
     width:100px;
     min-height: 50px;
 }
-
-#carreBambou--validate{
-    width:50px;
-    min-height: 50px;
-    background-color: brown 
-}
-
-
 
 /* Responsive --------------------*/
 

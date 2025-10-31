@@ -40,7 +40,6 @@ let tlSardines2 = gsap.timeline({
         start:'top 100%',
         end:'top 20%',
         scrub:1,
-        markers:true,
         id:"Sardine",
         toggleActions: 'play none reverse reset',
     },
@@ -70,15 +69,23 @@ gsap.to(sections, {
 });
 
 
-/**  Animation Bambou */
+/**  Animation Bambou */  // J'ai essayé de faire une fonction pour changer la couleur de fond quand le bambou est sur le panda mais ça n'a pas fonctionné ( référence : https://gsap.com/docs/v3/Plugins/Draggable/ )
 
 Draggable.create("#bambouDrag", {
     type: "x,y",
-    bounds:"#section5",
+    bounds:"#section4",
     cursor:'grab',
 
-})
+    /**ondragend:function(){
+        if (this.hitTest("#bambouDrag", 20)) {
+        document.getElementById("#section4").style.backgroundColor="black";
+            
+        } else {
+        document.getElementById("#section4").style.backgroundColor="antiquewhite"
+        }
+    } */
 
+})
 
 
 /** MatchMedia */
