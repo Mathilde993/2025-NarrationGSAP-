@@ -17,6 +17,10 @@ h2{
     font-family: "Quicksand", sans-serif;
 }
 
+h3{
+    font-family: "Fredericka the Great", serif;
+}
+
 p{
     font-family: "Quicksand", sans-serif;
 }
@@ -102,10 +106,10 @@ body{
 
 .imgCarrou{
     
-    width: 400px;
+    width: 400px;   
     min-height: 200px;
     border-radius: 10px;
-    border:solid 2px rgb(255, 255, 255); 
+    border:solid 2px rgb(0, 0, 0); 
     
 }
 
@@ -225,31 +229,81 @@ body{
     width:100%;
     display: flex;
       
+}
+
+
+.blocTxt1Sec3{
+
+    background-image:url(assets/img/lion-section.jpg);
+
+}
+
+.blocTxt2Sec3{
+
+    background-image:url(assets/img/girafe.jpg);
+
+
+}
+
+.blocTxt3Sec3{
+
+    background-image:url(assets/img/tigre-blanc.jpg);
 
 }
 
 .blocTxt1Sec3, .blocTxt2Sec3, .blocTxt3Sec3{
+
     width:100vw;
     height: 100vh;
 
-}
-
-.blocTxt1Sec3{
-    background-image:url(assets/img/lion-section.jpg);
-    background-size:cover;
-    background-position: center;
-}
-
-.blocTxt2Sec3{
-    background-image:url(assets/img/girafe.jpg);
     background-size: cover;
     background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 280px
+
 }
 
-.blocTxt3Sec3{
-    background-image:url(assets/img/tigre-blanc.jpg);
-    background-size: cover;
-    background-position: center;
+.titreAnimaux{
+
+    width:40%;
+    font-size: 80px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 3s;
+    color: white;
+    transition: color 3s;
+
+    border:solid 1px black;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 5px;
+
+    white-space: nowrap; /* Référence : https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/white-space */
+
+}
+
+.titreAnimaux:hover{
+    background-color: rgba(123, 123, 173, 0.2);
+    color:black;
+}
+
+.txtSavane{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 30%;
+
+    padding: 5px;
+}
+
+.txtAnimaux{
+    align-self: flex-start;
 }
 
 /* Section 4 ------------------------- */

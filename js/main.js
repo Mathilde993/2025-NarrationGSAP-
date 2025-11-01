@@ -63,11 +63,18 @@ gsap.to(sections, {
     trigger: "#section3",
     pin: true,
     scrub: 1,
-    snap: 1 / (sections.length - 1),
     end: "+=2000"
   }
 });
 
+/** Draggable titre */
+
+Draggable.create("#idTitreAnimaux", {
+    type:"x,y",
+    bounds:"#section3",
+    cursor:'grab',
+
+})
 
 /**  Animation Bambou */  // J'ai essayé de faire une fonction pour changer la couleur de fond quand le bambou est sur le panda mais ça n'a pas fonctionné ( référence : https://gsap.com/docs/v3/Plugins/Draggable/ )
 
