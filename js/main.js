@@ -76,22 +76,31 @@ Draggable.create("#idTitreAnimaux", {
 
 })
 
-/**  Animation Bambou */  // J'ai essayé de faire une fonction pour changer la couleur de fond quand le bambou est sur le panda mais ça n'a pas fonctionné ( référence : https://gsap.com/docs/v3/Plugins/Draggable/ )
+/**  Animation Bambou */ 
 
 Draggable.create("#bambouDrag", {
     type: "x,y",
     bounds:"#section4",
     cursor:'grab',
 
-    /**ondragend:function(){
-        if (this.hitTest("#bambouDrag", 20)) {
-        document.getElementById("#section4").style.backgroundColor="black";
+    onDragEnd:function(){
+        if (this.hitTest("#pandaId", "20px")) {
+            console.log("Collision");
+        document.getElementById("section4").style.backgroundColor = "antiquewhite";
+        document.getElementById("txtPandaId").style.color = "black"
             
         } else {
-        document.getElementById("#section4").style.backgroundColor="antiquewhite"
+        document.getElementById("section4").style.backgroundColor = "black"
+        document.getElementById("txtPandaId").style.color = "antiquewhite"
         }
-    } */
+    } 
+})
 
+/** Animation Rotate Chemin */
+
+Draggable.create("#cheminId", {
+    type:"rotation",
+    
 })
 
 

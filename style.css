@@ -34,7 +34,6 @@ p{
 body{
     width:100vw;
     min-height: 100vh;
-    /*overflow-x: hidden;*/
 }
 
 #section1{
@@ -221,7 +220,7 @@ body{
     display: flex;
     justify-content: center;
 
-    overflow: hidden;
+    overflow-x: hidden;
     
 }
 
@@ -300,6 +299,8 @@ body{
     width: 30%;
 
     padding: 5px;
+
+    box-shadow: 10px 10px 40px rgb(0, 0, 0);
 }
 
 .txtAnimaux{
@@ -316,7 +317,7 @@ body{
     justify-content: center;
     align-items: center;
 
-    background-image: url(assets/img/fond-Sec2.webp);
+    background-color: black;
     color: white;
 
     gap: 70px
@@ -326,15 +327,56 @@ body{
     width:300px;
     min-height: 200px;
     padding-right: 70px;
+    z-index: 1;
+    filter:drop-shadow(5px 5px 10px rgba(202, 202, 202, 0.4)) /* Référence : https://css-tricks.com/adding-shadows-to-svg-icons-with-css-and-svg-filters/ */
 }
 
 .bambou{
     width:100px;
     min-height: 50px;
+    position:relative; /* J'ai demandé à ChatGPT comment faire pour avoir mon bambou devant car il passait derrière le panda est impossible de le récupérer */
+    z-index: 10;
+}
+
+/* Section 5*/
+
+#section5{
+    width:100%;
+    min-height: 10%;
+
+    background-image: url(assets/img/fond-Sec2.webp);
+}
+
+.titreChemin{
+    color: white;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+}
+
+.cheminComplet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+
+}
+
+.imgLapin, .salade{
+    width:90px
+}
+
+.chemin{
+    width:50px
 }
 
 /* Responsive --------------------*/
 
 /* Animation --------------------*/
 
-/* Media Queries ------------------
+/* Media Queries ------------------*/
